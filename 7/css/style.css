@@ -225,7 +225,7 @@ img {
   height: 2px;
   background: #000000;
   transform-origin: 50% 50%;
-  transform: rotate3d 0, 0, 1, 45deg;
+  transform: rotate3d(0, 0, 1, 45deg);
   transition: bottom 0.3s 0.3s, transform 0.3s;
 }
 .main-navigation--opened .main-navigation__toggle-btn::after {
@@ -237,7 +237,7 @@ img {
   top: 20px;
   background: #000000;
   transform-origin: 50% 50%;
-  transform: rotate3d 0, 0, 1, -45deg;
+  transform: rotate3d(0, 0, 1, -45deg);
   transition: bottom 0.3s 0.3s, transform 0.3s;
 }
 
@@ -2466,6 +2466,15 @@ img {
     font-size: 20px;
     line-height: 30px;
   }
+}
+
+.form-field__field-text::-webkit-outer-spin-button,
+.form-field__field-text::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.form-field__field-text {
+  -moz-appearance: textfield;
 }
 
 .form-field__field-text--error {
